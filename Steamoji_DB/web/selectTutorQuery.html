@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Search / Display Tutor Records-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search / Display Tutors</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/selectAllTutors.php">
+      <fieldset>
+        <legend>Display All Tutors</legend>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <form method="post" action="php/selectTutorsByDegree.php">
+      <fieldset>
+        <legend>Display Tutors Whose Highest Degree Contains</legend>
+        <label>Keyword</label>
+        <input type="text" name="degree" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <form method="post" action="php/selectTutorsByDateRange.php">
+      <fieldset>
+        <legend>Display Tutors Born Between Two Dates</legend>
+        <label>From Date</label> <input type="date" name="startDate" /> <br />
+        <label>To Date</label> <input type="date" name="endDate" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <a href="index.html">Back to the Future!(Homepage)</a>
+  </body>
+</html>

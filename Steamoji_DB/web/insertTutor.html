@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--Insert Tutor HTML file-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert a Tutor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/insertTutor.php">
+      <fieldset>
+        <legend>Enter the information of the tutor:</legend>
+
+        <label>Tutor ID</label><input type="text" name="tutorId" maxlength="5" /> <br />
+        <label>First Name</label><input type="text" name="fname" /> <br />
+        <label>Last Name</label><input type="text" name="lname" /> <br />
+        <label>Date of Birth</label><input type="date" name="dob" /> <br />
+        <label>Highest Degree</label><input type="text" name="degree" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to the Future!(Homepage)</a>
+  </body>
+</html>
